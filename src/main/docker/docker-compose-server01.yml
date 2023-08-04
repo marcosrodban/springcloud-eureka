@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+ eurekaserver01:
+  image: eurekaserver:v1
+  container_name: eurekaserver01
+#  build: .
+  ports: 
+   - "9002:8899"
+  #links:
+  # - 
+  environment:
+   - variable1=valor1
+   - variable2=valor2
+#creamos un volumen de tipo host
+  volumes:
+   - /home/neo/temp/docker/var/apps/eurekaserver01/conf:/conf

@@ -1,7 +1,12 @@
+#el puerto de arranque para el servidor tomcat se coje del servidor de configuracion
+#server:
+#  port: 8898
 spring:
   application:
     name: eureka-server
+  profiles:
+    active: 01-dev
   cloud:
     config:
-      uri: http://10.127.36.68:8889
+      uri: http://192.168.1.126:9001 
       failFast: true

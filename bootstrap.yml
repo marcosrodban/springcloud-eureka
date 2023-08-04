@@ -1,0 +1,11 @@
+server:
+  port: 8899
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    active: 01-dev
+  cloud:
+    config:
+      uri: http://localhost:8899 
+      failFast: true
